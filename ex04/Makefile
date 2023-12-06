@@ -6,13 +6,11 @@
 #    By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/06 11:30:00 by abenamar          #+#    #+#              #
-#    Updated: 2023/12/06 11:30:33 by abenamar         ###   ########.fr        #
+#    Updated: 2023/12/06 20:55:32 by abenamar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME := sed_is_for_losers
-
-INCLUDES := -I $(CURDIR)
 
 SRCS := main.cpp
 
@@ -28,10 +26,10 @@ CFLAGS += -std=c++98
 RM := rm -f
 
 %.o: %.cpp
-	$(CC) $(CFLAGS) -c $< -o $@ $(INCLUDES)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(INCLUDES) $(LDLIBS)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LDLIBS)
 
 all: $(NAME)
 
