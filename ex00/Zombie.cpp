@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 11:48:38 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/05 17:19:05 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/14 13:03:42 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ Zombie::Zombie(std::string name) : name(name)
 	return;
 }
 
-Zombie::~Zombie()
+Zombie::~Zombie(void)
 {
 	std::cout << "Zombie \"" << this->name;
 	std::cout << "\" has been destroyed !" << std::endl;
@@ -25,7 +25,7 @@ Zombie::~Zombie()
 	return;
 }
 
-void Zombie::announce() const
+void Zombie::announce(void) const
 {
 	std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 
