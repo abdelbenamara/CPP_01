@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 23:57:16 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/06 00:29:48 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/14 13:09:08 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ HumanB::HumanB(std::string name) : name(name), weapon(NULL)
 	return;
 }
 
-HumanB::~HumanB()
+HumanB::~HumanB(void)
 {
 	return;
 }
@@ -29,7 +29,7 @@ void HumanB::setWeapon(Weapon &weapon)
 	return;
 }
 
-void HumanB::attack() const
+void HumanB::attack(void) const
 {
 	std::cout << this->name << " attacks with their ";
 
