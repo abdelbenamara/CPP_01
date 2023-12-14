@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 23:42:58 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/06 00:03:48 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/14 13:08:58 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ Weapon::Weapon(std::string type) : type(type)
 	return;
 }
 
-Weapon::~Weapon()
+Weapon::~Weapon(void)
 {
 	return;
 }
 
-std::string Weapon::getType() const
+std::string Weapon::getType(void) const
 {
 	return this->type;
 }
