@@ -6,13 +6,13 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 21:06:52 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/05 21:11:46 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/14 13:06:53 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int main()
+int main(void)
 {
 	Zombie *zombies;
 
