@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 19:20:20 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/06 22:29:23 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/14 13:10:09 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 std::string Harl::mood[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
-Harl::Harl()
+Harl::Harl(void)
 {
 	return;
 }
 
-Harl::~Harl()
+Harl::~Harl(void)
 {
 	return;
 }
