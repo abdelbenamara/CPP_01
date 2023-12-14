@@ -6,14 +6,14 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 21:28:33 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/05 21:45:29 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/14 13:11:08 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
 
-int main()
+int main(void)
 {
 	std::string str = "HI THIS IS BRAIN";
 	std::string *stringPTR = &str;
