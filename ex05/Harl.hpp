@@ -6,12 +6,12 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 19:16:14 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/06 22:19:49 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/14 13:09:55 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HARL_HPP
-#define HARL_HPP
+#ifndef __HARL_HPP__
+#define __HARL_HPP__
 
 #include <iostream>
 #include <string>
@@ -19,8 +19,8 @@
 class Harl
 {
 public:
-	Harl();
-	~Harl();
+	Harl(void);
+	~Harl(void);
 
 	void complain(std::string level);
 
