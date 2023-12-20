@@ -6,10 +6,11 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 00:06:59 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/14 13:16:14 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/20 23:00:34 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Weapon.hpp"
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
