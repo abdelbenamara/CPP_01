@@ -6,7 +6,7 @@
 #    By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/06 11:30:00 by abenamar          #+#    #+#              #
-#    Updated: 2023/12/06 20:55:32 by abenamar         ###   ########.fr        #
+#    Updated: 2023/12/20 23:09:22 by abenamar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ RM := rm -f
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LDLIBS)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
 
 all: $(NAME)
 
