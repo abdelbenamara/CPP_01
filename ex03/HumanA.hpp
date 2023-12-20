@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 23:45:17 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/14 13:09:03 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/20 22:59:00 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define __HUMANA_HPP__
 
 #include <iostream>
+#include <string>
 #include "Weapon.hpp"
 
 class HumanA
