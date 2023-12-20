@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 19:20:20 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/14 13:10:09 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/20 22:30:59 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,16 @@ void Harl::complain(std::string level)
 	std::size_t i;
 
 	i = 0;
-	while (mood[i] != level)
-	{
-		if (i == 3)
-		{
-			std::cout << "\033[0:37m";
-			std::cout << "* Harl is speechless *";
-			std::cout << "\033[0m" << std::endl;
-
-			return;
-		}
-
+	while (i < 4 && mood[i] != level)
 		++i;
+
+	if (i == 4)
+	{
+		std::cout << "\033[0:37m";
+		std::cout << "* Probably complaining about insignificant problems *";
+		std::cout << "\033[0m" << std::endl;
+
+		return;
 	}
 
 	return (this->*log[i])();
