@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 11:47:29 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/14 13:03:30 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/21 13:56:03 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@
 class Zombie
 {
 public:
-	Zombie(std::string name);
+	Zombie(std::string const &name);
 	~Zombie(void);
 
-	void announce(void) const;
+	void announce(void);
 
 private:
 	std::string name;
