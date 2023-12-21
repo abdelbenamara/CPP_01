@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 19:16:14 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/14 13:09:55 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/21 14:48:52 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ public:
 	void complain(std::string level);
 
 private:
-	static std::string mood[];
+	static const std::string mood[];
 
 	void debug(void);
 	void info(void);
