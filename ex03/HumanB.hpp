@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 23:45:19 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/20 22:59:18 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/21 14:12:00 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 class HumanB
 {
 public:
-	HumanB(std::string name);
+	HumanB(std::string const &name);
 	~HumanB(void);
 
 	void setWeapon(Weapon &weapon);
