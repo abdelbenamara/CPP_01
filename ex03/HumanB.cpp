@@ -6,13 +6,13 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 23:57:16 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/14 13:09:08 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/21 14:12:04 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string name) : name(name), weapon(NULL)
+HumanB::HumanB(std::string const &name) : name(name), weapon(NULL)
 {
 	return;
 }
