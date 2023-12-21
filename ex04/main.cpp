@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 11:22:59 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/06 15:27:34 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/21 14:38:02 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 #include <fstream>
 #include <string>
 
-static bool open(std::ifstream &ifs, std::ofstream &ofs, char const *ifn)
+static bool openFiles(std::ifstream &ifs, std::ofstream &ofs, char const *ifn)
 {
-	std::string rfn;
+	std::string rfn(ifn);
 
 	ifs.open(ifn);
 
@@ -28,7 +28,6 @@ static bool open(std::ifstream &ifs, std::ofstream &ofs, char const *ifn)
 		return false;
 	}
 
-	rfn = ifn;
 	rfn += ".replace";
 	ofs.open(rfn.c_str());
 
@@ -44,18 +43,15 @@ static bool open(std::ifstream &ifs, std::ofstream &ofs, char const *ifn)
 	return true;
 }
 
-static void replace(std::ifstream &ifs,
-					std::ofstream &ofs,
-					char const *is,
-					char const *os)
+static void replaceStrings(std::ifstream &ifs,
+						   std::ofstream &ofs,
+						   char const *is,
+						   char const *os)
 {
-	std::string s1;
-	std::string s2;
+	std::string const s1(is);
+	std::string const s2(os);
 	std::string line;
 	std::size_t n;
-
-	s1 = is;
-	s2 = os;
 
 	while (std::getline(ifs, line))
 	{
@@ -92,11 +88,10 @@ int main(int argc, char *argv[])
 		return 2;
 	}
 
-	if (!open(ifs, ofs, argv[1]))
+	if (!openFiles(ifs, ofs, argv[1]))
 		return 1;
 
-	replace(ifs, ofs, argv[2], argv[3]);
-
+	replaceStrings(ifs, ofs, argv[2], argv[3]);
 	ifs.close();
 	ofs.close();
 
