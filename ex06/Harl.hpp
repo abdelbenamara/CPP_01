@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 19:16:14 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/14 13:09:55 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/21 14:50:46 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,15 @@ public:
 	Harl(void);
 	~Harl(void);
 
-	void complain(std::string level);
+	void complain(std::string const &level) const;
 
 private:
-	static std::string mood[];
+	static const std::string mood[];
 
-	void debug(void);
-	void info(void);
-	void warning(void);
-	void error(void);
+	void debug(void) const;
+	void info(void) const;
+	void warning(void) const;
+	void error(void) const;
 };
 
 #endif
