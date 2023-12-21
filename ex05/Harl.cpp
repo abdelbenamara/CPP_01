@@ -6,13 +6,13 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 19:20:20 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/20 22:30:59 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/21 14:52:16 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
-std::string Harl::mood[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+std::string const Harl::mood[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
 Harl::Harl(void)
 {
