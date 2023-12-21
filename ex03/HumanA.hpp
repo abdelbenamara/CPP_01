@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 23:45:17 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/20 22:59:00 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/21 14:10:11 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@
 class HumanA
 {
 public:
-	HumanA(std::string name, Weapon &weapon);
+	HumanA(std::string const &name, Weapon const &weapon);
 	~HumanA(void);
 
 	void attack(void) const;
 
 private:
 	std::string name;
-	Weapon &weapon;
+	Weapon const &weapon;
 };
 
 #endif
