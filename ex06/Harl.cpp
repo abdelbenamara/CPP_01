@@ -6,13 +6,13 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 19:20:20 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/20 22:51:14 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/21 14:51:01 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
-std::string Harl::mood[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+std::string const Harl::mood[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
 Harl::Harl(void)
 {
@@ -24,7 +24,7 @@ Harl::~Harl(void)
 	return;
 }
 
-void Harl::complain(std::string level)
+void Harl::complain(std::string const &level) const
 {
 	std::size_t i;
 
@@ -68,7 +68,7 @@ void Harl::complain(std::string level)
 	return;
 }
 
-void Harl::debug(void)
+void Harl::debug(void) const
 {
 	std::cout << "\033[0:37m";
 	std::cout << "[ DEBUG ]";
@@ -82,7 +82,7 @@ void Harl::debug(void)
 	return;
 }
 
-void Harl::info(void)
+void Harl::info(void) const
 {
 	std::cout << "\033[0:37m";
 	std::cout << "[ INFO ]";
@@ -96,7 +96,7 @@ void Harl::info(void)
 	return;
 }
 
-void Harl::warning(void)
+void Harl::warning(void) const
 {
 	std::cout << "\033[0:37m";
 	std::cout << "[ WARNING ]";
@@ -110,7 +110,7 @@ void Harl::warning(void)
 	return;
 }
 
-void Harl::error(void)
+void Harl::error(void) const
 {
 	std::cout << "\033[0:37m";
 	std::cout << "[ ERROR ]";
