@@ -6,7 +6,7 @@
 /*   By: abenamar <abenamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 16:45:51 by abenamar          #+#    #+#             */
-/*   Updated: 2023/12/14 13:04:04 by abenamar         ###   ########.fr       */
+/*   Updated: 2023/12/27 20:40:43 by abenamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int main(void)
 
 	zombie = newZombie("Foo Heap");
 	zombie->announce();
+
 	delete zombie;
 
 	randomChump("Bar Stack");
